@@ -2,9 +2,9 @@ const express = require("express");
 const parser = require("body-parser");
 const cors = require("cors");
 
-const gamesRouter = require("./routes/games");
-const eventsRouter = require("./routes/events");
-const usersRouter = require("./routes/users");
+const gamesRouter = require("./routes/game");
+const eventsRouter = require("./routes/event");
+const usersRouter = require("./routes/user");
 
 const app = express();
 

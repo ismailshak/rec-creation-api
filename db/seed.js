@@ -1,6 +1,6 @@
-const Game = require("./models/Game.js");
+const Game = require("./models/Game");
 // const Event = require("./models/Event.js");
-const User = require("./models/User.js");
+const User = require("./models/User");
 
 const gamesData = require("./data/gameData.json");
 // const eventsData = require("./data/eventData.json");

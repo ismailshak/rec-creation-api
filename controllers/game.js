@@ -1,4 +1,4 @@
-const Game = require("./db/models/Game.js");
+const Game = require("../db/models/Game");
 
 module.exports = {
   index: (req, res) => {
