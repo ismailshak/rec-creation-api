@@ -19,6 +19,16 @@ module.exports = {
         console.log(err);
       });
   },
+  findById: (req, res) => {
+    Event.findOne({ id: req.params.id })
+      .then(event => {
+        res.json(event);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  },
+
   findByHost: (req, res) => {
     Event.findOne({ host: req.params.id })
       .then(event => {

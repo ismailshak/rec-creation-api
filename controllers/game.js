@@ -19,6 +19,15 @@ module.exports = {
         console.log(err);
       });
   },
+  findById: (req, res) => {
+    Game.findOne({ id: req.params.id })
+      .then(game => {
+        res.json(game);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  },
   create: (req, res) => {
     Game.create(req.body).then(game => {
       res.json(game);

@@ -5,6 +5,7 @@ const eventsController = require("../controllers/event.js");
 
 router.get("/", eventsController.index);
 router.get("/name/:name", eventsController.findByName);
+router.get("/id/:id", eventsController.findById);
 router.get("/host/:id", eventsController.findByHost);
 router.post("/", eventsController.create);
 router.put("/edit/:name", eventsController.update);
