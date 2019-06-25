@@ -1,83 +1,82 @@
 [
-{
-"name": "Capture the Flag",
-"supplies": "Two Flags , Forested Area",
-"numPlayers": 10,
-"ageRestriction": false,
-"rules": "First of all, a big open space just isn't going to work. Since a big part of this game involves hiding and ducking around corners, a more forested area would be ideal. As far as how many players you need, it doesn't really matter as long as both teams are equal(although at least five per team is generally a good number). The playing field must be divided into three areas, with the two teams separated by a neutral space. Each team must hide their flag somewhere in their area, making sure that nobody from the opposing team can see where it is. Both teams get five minutes to hide their flags. Once the flags are hidden, the game begins. In order to win the game, you must capture the other team's flag and bring it back to your own territory. But if an enemy team member grabs you while you're standing on their part of the field, they are allowed to take you straight to jail (which is a small patch of land in their territory). You can be freed from jail if one of your team members touches you, and there's no limit to how many times you can be thrown back into jail.",
-"image": 
-}, 
-{
-"name": "Likes and Dislikes",
-"supplies": "Index Cards, Pens",
-"numPlayers": 4,
-"ageRestriction": false,
-"rules": "Ask everyone to write down 5 of their likes and 5 of their dislikes on index cards. Read the cards one at a time and have everyone try to guess who the information belongs to.",
-"image":
-}, 
-{
-"name": "The Mummy",
-"supplies": "Rolls of Toilet Paper",
-"numPlayers": 4,
-"ageRestriction": false,
-"rules": "Break into groups of two or three. Each group gets a roll of toilet paper and picks one person to be the mummy. When the clock starts, all the teams have to wrap their mummies using the whole roll of toilet paper. Whichever team rolls up their mummy the fastest wins.",
-"image":
-}, 
-{
-"name": "Musical Chairs",
-"supplies": "Chairs (one less than the number of players), Song Playlist",
-"numPlayers": 5,
-"ageRestriction": false,
-"rules": "Arrange chairs in a circle with the seats facing outwards. Players are gathered in a circle around the chairs. Play music and have the players walk around the perimeter of the chair circle. When the music stops, everyone must immediately sit in a chair. The one person left standing is out. Remove a chair and continue in this way until only one person is left.",
-"image":
-}, 
-{
-"name": "Steal the Bacon"
-"supplies": "Ball or Bean Bag (the Bacon), Playing Field with Boundary Lines, Referee",
-"numPlayers": 6,
-"ageRestriction": false,
-"rules": "Divide everyone into two teams and have each team sit on a boundary line at opposite ends of the playing field. Give players on each team a number, each group should have a one, a two, etc. Place the 'bacon' in the center of the playing area. The referee calls out a number and all players with that number run to pick up the 'bacon'. The person who gets the 'bacon' tries to run across the opposing team's goal line without being tagged by the person who did not get the bacon. Once someone is tagged or gets across their goal line, the round is over. Play to a designated score.",
-"image":
-}, 
-{
-"name": "Blindman's Swag",
-"supplies": "Blindfold, Prizes"
-"numPlayers": 4,
-"ageRestriction": false,
-"rules": "Break into partners and blindfold one. The non-blindfolded partners place a prize somewhere in the room. The non-blindfolded partners then have to guide their partners to the prize without any physical contact.",
-"image":
-}, 
-{
-"name": "Thumper",
-"supplies": "Alcoholic Drinks",
-"numPlayers": 4,
-"ageRestriction": true,
-"rules": "All players sit around a table and select a particular hand motion. Everyone thumps at the table and the game begins. The first player starts his or her hand action and then does someone else's action, while the others continue thumping. Now, the person whose hand action was done repeats his or her action, and then does the action of a person-- prompting that person to go next. Whoever messes up or takes too long to react, drinks. To make the game more fun, you could also make a sound for everyone and do the action and the sound.", 
-"image":
-}, 
-{
-"name": "Flip Cup",
-"supplies": "Alcoholic Drinks, Cups",
-"numPlayers": 4,
-"ageRestriction": true,
-"rules": "Two teams competing against each other stand on opposite side of a table with a line of cups filled with drinks along the edge in front of them. One member from each team starts the game by drinking from the first cup. Each competitor must finish their drink and then set the empty cup right-side-up on the table's edge. They will have to attempt to flip the cup upside down and repeat until succesful. At that point, the next player takes a turn and play continues until one team finishes drinking from and flipping all of their cups.",
-"image":
-}, 
-{
-"name": "Balloon Duel",
-"supplies": "Balloons, Tape",
-"numPlayers": 2,
-"ageRestriction": false,
-"rules": "Players tape a balloon to one leg. The first person to bust the other person's balloon is the winner.",
-"image":
-}, 
-{
-"name": "Sticker Stalker",
-"supplies": "Sheets of Stickers",
-"numPlayers": 6,
-"ageRestriction": false,
-"rules": "Everyone has a sheet of stickers and must get rid of the whole sheet by sticking them to the other players without them noticing. If someone is caught, the other person places a sticker on the offender. First one to empty their sticker sheet wins",
-"image":
-}
-
+  {
+    "name": "Capture the Flag",
+    "supplies": "Two Flags , Forested Area",
+    "numPlayers": 10,
+    "ageRestriction": false,
+    "rules": "First of all, a big open space just isn't going to work. Since a big part of this game involves hiding and ducking around corners, a more forested area would be ideal. As far as how many players you need, it doesn't really matter as long as both teams are equal(although at least five per team is generally a good number). The playing field must be divided into three areas, with the two teams separated by a neutral space. Each team must hide their flag somewhere in their area, making sure that nobody from the opposing team can see where it is. Both teams get five minutes to hide their flags. Once the flags are hidden, the game begins. In order to win the game, you must capture the other team's flag and bring it back to your own territory. But if an enemy team member grabs you while you're standing on their part of the field, they are allowed to take you straight to jail (which is a small patch of land in their territory). You can be freed from jail if one of your team members touches you, and there's no limit to how many times you can be thrown back into jail.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/flag.png"
+  },
+  {
+    "name": "Likes and Dislikes",
+    "supplies": "Index Cards, Pens",
+    "numPlayers": 4,
+    "ageRestriction": false,
+    "rules": "Ask everyone to write down 5 of their likes and 5 of their dislikes on index cards. Read the cards one at a time and have everyone try to guess who the information belongs to.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/like.png"
+  },
+  {
+    "name": "The Mummy",
+    "supplies": "Rolls of Toilet Paper",
+    "numPlayers": 4,
+    "ageRestriction": false,
+    "rules": "Break into groups of two or three. Each group gets a roll of toilet paper and picks one person to be the mummy. When the clock starts, all the teams have to wrap their mummies using the whole roll of toilet paper. Whichever team rolls up their mummy the fastest wins.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/mummy.png"
+  },
+  {
+    "name": "Musical Chairs",
+    "supplies": "Chairs (one less than the number of players), Song Playlist",
+    "numPlayers": 5,
+    "ageRestriction": false,
+    "rules": "Arrange chairs in a circle with the seats facing outwards. Players are gathered in a circle around the chairs. Play music and have the players walk around the perimeter of the chair circle. When the music stops, everyone must immediately sit in a chair. The one person left standing is out. Remove a chair and continue in this way until only one person is left.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/musical-chairs.png"
+  },
+  {
+    "name": "Steal the Bacon",
+    "supplies": "Ball or Bean Bag (the Bacon), Playing Field with Boundary Lines, Referee",
+    "numPlayers": 6,
+    "ageRestriction": false,
+    "rules": "Divide everyone into two teams and have each team sit on a boundary line at opposite ends of the playing field. Give players on each team a number, each group should have a one, a two, etc. Place the 'bacon' in the center of the playing area. The referee calls out a number and all players with that number run to pick up the 'bacon'. The person who gets the 'bacon' tries to run across the opposing team's goal line without being tagged by the person who did not get the bacon. Once someone is tagged or gets across their goal line, the round is over. Play to a designated score.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/bacon.png"
+  },
+  {
+    "name": "Blindman's Swag",
+    "supplies": "Blindfold, Prizes",
+    "numPlayers": 4,
+    "ageRestriction": false,
+    "rules": "Break into partners and blindfold one. The non-blindfolded partners place a prize somewhere in the room. The non-blindfolded partners then have to guide their partners to the prize without any physical contact.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/bandage.png"
+  },
+  {
+    "name": "Thumper",
+    "supplies": "Alcoholic Drinks",
+    "numPlayers": 4,
+    "ageRestriction": true,
+    "rules": "All players sit around a table and select a particular hand motion. Everyone thumps at the table and the game begins. The first player starts his or her hand action and then does someone else's action, while the others continue thumping. Now, the person whose hand action was done repeats his or her action, and then does the action of a person-- prompting that person to go next. Whoever messes up or takes too long to react, drinks. To make the game more fun, you could also make a sound for everyone and do the action and the sound.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/peace.png"
+  },
+  {
+    "name": "Flip Cup",
+    "supplies": "Alcoholic Drinks, Cups",
+    "numPlayers": 4,
+    "ageRestriction": true,
+    "rules": "Two teams competing against each other stand on opposite side of a table with a line of cups filled with drinks along the edge in front of them. One member from each team starts the game by drinking from the first cup. Each competitor must finish their drink and then set the empty cup right-side-up on the table's edge. They will have to attempt to flip the cup upside down and repeat until succesful. At that point, the next player takes a turn and play continues until one team finishes drinking from and flipping all of their cups.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/plastic-cup.png"
+  },
+  {
+    "name": "Balloon Duel",
+    "supplies": "Balloons, Tape",
+    "numPlayers": 2,
+    "ageRestriction": false,
+    "rules": "Players tape a balloon to one leg. The first person to bust the other person's balloon is the winner.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/balloons.png"
+  },
+  {
+    "name": "Sticker Stalker",
+    "supplies": "Sheets of Stickers",
+    "numPlayers": 6,
+    "ageRestriction": false,
+    "rules": "Everyone has a sheet of stickers and must get rid of the whole sheet by sticking them to the other players without them noticing. If someone is caught, the other person places a sticker on the offender. First one to empty their sticker sheet wins",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/sticker.png"
+  }
 ]
