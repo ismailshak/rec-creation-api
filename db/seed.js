@@ -10,7 +10,7 @@ Game.deleteMany({})
   .then(() => {
     Game.create(gamesData).then(gameDocs => {
       console.log(gameDocs);
-      process.exit();
+      // process.exit();
     });
   })
   .catch(err => {
@@ -21,7 +21,7 @@ User.deleteMany({})
   .then(() => {
     User.create(usersData).then(userDocs => {
       console.log(userDocs);
-      process.exit();
+      // process.exit();
     });
   })
   .catch(err => {
