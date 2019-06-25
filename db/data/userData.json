@@ -2,19 +2,16 @@
   {
     "name": "Jordan Mittelman",
     "email": "jordan@rec-creation.com",
-    "password": "signin",
-    "events": "Block Party"
+    "password": "signin"
   },
   {
     "name": "Sean Urbassik",
     "email": "sean@rec-creation.com",
-    "password": "happyplace",
-    "events": "Birthday Bash"
+    "password": "happyplace"
   },
   {
     "name": "Ismail Elshakankiry",
     "email": "ismail@rec-creation.com",
-    "password": "bigboss",
-    "events": ""
+    "password": "bigboss"
   }
 ]
