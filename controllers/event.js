@@ -20,7 +20,7 @@ module.exports = {
       });
   },
   findById: (req, res) => {
-    Event.findOne({ id: req.params.id })
+    Event.findOne({ _id: req.params.id })
       .then(event => {
         res.json(event);
       })

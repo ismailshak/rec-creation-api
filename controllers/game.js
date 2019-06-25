@@ -20,7 +20,7 @@ module.exports = {
       });
   },
   findById: (req, res) => {
-    Game.findOne({ id: req.params.id })
+    Game.findOne({ _id: req.params.id })
       .then(game => {
         res.json(game);
       })
