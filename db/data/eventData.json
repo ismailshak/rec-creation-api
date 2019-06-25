@@ -5,8 +5,7 @@
     "location": "My Street",
     "participants": {
       "name": "",
-      "email": "",
-      "age": ""
+      "email": ""
     },
     "game": "",
     "type": "Outdoor",
@@ -18,8 +17,7 @@
     "location": "My House",
     "participants": {
       "name": "",
-      "email": "",
-      "age": ""
+      "email": ""
     },
     "game": "",
     "type": "Indoor",
