@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Block Party",
+    "host": "Jordan Mittelman",
+    "location": "My Street",
+    "participants": {
+      "name": "",
+      "email": "",
+      "age": ""
+    },
+    "game": "",
+    "type": "Outdoor",
+    "status": false
+  },
+  {
+    "name": "Birthday Bash",
+    "host": "Sean Urbassik",
+    "location": "My House",
+    "participants": {
+      "name": "",
+      "email": "",
+      "age": ""
+    },
+    "game": "",
+    "type": "Indoor",
+    "status": false
+  }
+]

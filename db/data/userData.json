@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Jordan Mittelman",
+    "email": "jordan@rec-creation.com",
+    "password": "signin",
+    "events": "Block Party"
+  },
+  {
+    "name": "Sean Urbassik",
+    "email": "sean@rec-creation.com",
+    "password": "happyplace",
+    "events": "Birthday Bash"
+  },
+  {
+    "name": "Ismail Elshakankiry",
+    "email": "ismail@rec-creation.com",
+    "password": "bigboss",
+    "events": ""
+  }
+]
