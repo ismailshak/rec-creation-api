@@ -4,9 +4,10 @@ const router = express.Router();
 const eventsController = require("../controllers/event.js");
 
 router.get("/", eventsController.index);
-router.get("/:name", eventsController.findByName);
+router.get("/name/:name", eventsController.findByName);
+router.get("/host/:id", eventsController.findByHost);
 router.post("/", eventsController.create);
-router.put("/:name", eventsController.update);
-router.delete("/:name", eventsController.delete);
+router.put("/edit", eventsController.update);
+router.delete("/delete", eventsController.delete);
 
 module.exports = router;
