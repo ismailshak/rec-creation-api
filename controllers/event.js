@@ -85,18 +85,43 @@ module.exports = {
    * @apiGroup Event
    *
    * @apiParam (Request body (JSON)) {String} name Name of the Event
-   * @apiParam (Request body (JS))
+   * @apiParam (Request body (JSON)) {[Object]} host Host User of the Event
+   * @apiParam (Request body (JSON)) {String} location Location of the Event
+   * @apiParam (Request body (JSON)) {[Object]} game Game featured in the Event
+   * @apiParam (Request body (JSON)) {Object} participants Participants in the Event
+   * @apiParam (Request body (JSON)) {String} type Type of Event
+   * @apiParam (Request body (JSON)) {Boolean} status Status of Event
    */
   create: (req, res) => {
     Event.create(req.body).then(event => {
       res.json(event);
     });
   },
+  /**
+   * @api {put} /api/events/edit/:name Edit an existing Event
+   * @apiName EditEvent
+   * @apiGroup Event
+   *
+   * @apiParam {String} name Event's name
+   * @apiParam (Request body (JSON)) {[Object]} host Host User of the Event
+   * @apiParam (Request body (JSON)) {String} location Location of the Event
+   * @apiParam (Request body (JSON)) {[Object]} game Game featured in the Event
+   * @apiParam (Request body (JSON)) {Object} participants Participants in the Event
+   * @apiParam (Request body (JSON)) {String} type Type of Event
+   * @apiParam (Request body (JSON)) {Boolean} status Status of Event
+   */
   update: (req, res) => {
     Event.findOneAndUpdate({ name: req.params.name }, req.body, {
       new: true
     }).then(event => res.json(event));
   },
+  /**
+   * @api {delete} /api/events/delete/:name Delete an existing Event
+   * @apiName DeleteEvent
+   * @apiGroup Event
+   *
+   * @apiParam {String} name Event's name
+   */
   delete: (req, res) => {
     Event.findOneAndDelete({ name: req.params.name }).then(event =>
       res.json(event)
