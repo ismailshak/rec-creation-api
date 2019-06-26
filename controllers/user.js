@@ -1,8 +1,13 @@
 const User = require("../db/models/User");
-const jwt = require('jwt-simple');
-const config = require('../config/config')
+const jwt = require("jwt-simple");
+const config = require("../config/config");
 
 module.exports = {
+  /**
+   * @api {get} /api/users/ Request all Users
+   * @apiName GetUsers
+   * @apiGroup User
+   */
   index: (req, res) => {
     User.find()
       .then(users => {
@@ -12,8 +17,15 @@ module.exports = {
         console.log(err);
       });
   },
-  findByName: (req, res) => {
-    User.findOne({ name: req.params.name })
+  /**
+   * @api {get} /api/users/id/:id Request User by id
+   * @apiName GetById
+   * @apiGroup User
+   *
+   * @apiParam {String} id User's id in the database
+   */
+  findById: (req, res) => {
+    User.findById({ _id: req.params.id })
       .then(user => {
         res.json(user);
       })
@@ -21,6 +33,13 @@ module.exports = {
         console.log(err);
       });
   },
+  /**
+   * @api {get} /api/users/email/:email Request User by email
+   * @apiName GetByEmail
+   * @apiGroup User
+   *
+   * @apiParam {String} email User's email in the database
+   */
   findByEmail: (req, res) => {
     User.findOne({ email: req.params.email })
       .then(user => {
@@ -30,28 +49,26 @@ module.exports = {
         console.log(err);
       });
   },
-
+  /**
+   * @api {post} /api/users/ Create a new User
+   * @apiName
+   */
   create: (req, res) => {
     User.create(req.body).then(user => {
       res.json(user);
     });
   },
   update: (req, res) => {
-    User.findOneAndUpdate({ name: req.params.name }, req.body, {
+    User.findByIdAndUpdate({ _id: req.params.id }, req.body, {
       new: true
     }).then(user => res.json(user));
   },
   delete: (req, res) => {
-    User.findOneAndDelete({ name: req.params.name }).then(user =>
-      res.json(user)
-    );
+    User.findByIdAndDelete({ _id: req.params.id }).then(user => res.json(user));
   },
   signup: (req, res) => {
     if (req.body.email && req.body.password) {
-      let newUser = {
-        email: req.body.email,
-        password: req.body.password
-      };
+      let newUser = req.body;
       User.findOne({ email: req.body.email }).then(user => {
         if (!user) {
           User.create(newUser).then(user => {

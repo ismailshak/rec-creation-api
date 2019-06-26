@@ -1,25 +1,19 @@
 [
   {
-    "name": {
-      "firstName": "Jordan",
-      "lastName": "Mittelman"
-    },
+    "firstName": "Jordan",
+    "lastName": "Mittelman",
     "email": "jordan@rec-creation.com",
     "password": "signin"
   },
   {
-    "name": {
-      "firstName": "Sean",
-      "lastName": "Urbassik"
-    },
+    "firstName": "Sean",
+    "lastName": "Urbassik",
     "email": "sean@rec-creation.com",
     "password": "happyplace"
   },
   {
-    "name": {
-      "firstName": "Ismail",
-      "lastName": "Elshakankiry"
-    },
+    "firstName": "Ismail",
+    "lastName": "Elshakankiry",
     "email": "ismail@rec-creation.com",
     "password": "bigboss"
   }

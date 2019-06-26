@@ -3,10 +3,8 @@ const mongoose = require("../connection.js");
 const Schema = mongoose.Schema;
 
 const User = new Schema({
-  name: {
-    firstName: String,
-    lastName: String
-  },
+  firstName: String,
+  lastName: String,
   email: String,
   password: String,
   attending: [
