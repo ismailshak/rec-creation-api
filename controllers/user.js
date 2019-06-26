@@ -51,8 +51,14 @@ module.exports = {
   },
   /**
    * @api {post} /api/users/ Create a new User
-   * @apiName
+   * @apiName CreateUser
+   * @apiGroup User
+   *
+   * @apiParam (Request body JSON)) {String} firstName First Name of the User
+   *
+   *
    */
+
   create: (req, res) => {
     User.create(req.body).then(user => {
       res.json(user);

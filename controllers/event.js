@@ -38,6 +38,17 @@ module.exports = {
         console.log(err);
       });
   },
+
+  findByGame: (req, res) => {
+    Event.findById({ game: req.params.id })
+      .then(even => {
+        res.json(event);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  },
+
   create: (req, res) => {
     Event.create(req.body).then(event => {
       res.json(event);
