@@ -2,7 +2,7 @@ const Event = require("../db/models/Event");
 
 module.exports = {
   /**
-   * @api {get} /api/events/ Request all Events
+   * @api {get} /api/events/ Request All Events
    * @apiName GetEvents
    * @apiGroup Event
    */
@@ -16,11 +16,11 @@ module.exports = {
       });
   },
   /**
-   * @api {get} /api/events/name/:name Request Event by name
+   * @api {get} /api/events/name/:name Request Event By Name
    * @apiName GetEventByName
    * @apiGroup Event
    *
-   * @apiParam {String} name Event's name
+   * @apiParam {String} name Event's Name
    */
   findByName: (req, res) => {
     Event.findOne({ name: req.params.name })
@@ -32,7 +32,7 @@ module.exports = {
       });
   },
   /**
-   * @api {get} /api/events/id/:id Request Event by id
+   * @api {get} /api/events/id/:id Request Event By id
    * @apiName GetEventById
    * @apiGroup Event
    *
@@ -48,7 +48,7 @@ module.exports = {
       });
   },
   /**
-   * @api {get} /api/events/host/:id Request Event by host User
+   * @api {get} /api/events/host/:id Request Event By Host User
    * @apiName GetEventByHost
    * @apiGroup Event
    *
@@ -64,7 +64,7 @@ module.exports = {
       });
   },
   /**
-   * @api {get} /api/events/game/:id Request Event by game
+   * @api {get} /api/events/game/:id Request Event By Game
    * @apiName GetEventByGame
    * @apiGroup Event
    *
@@ -87,7 +87,7 @@ module.exports = {
    * @apiParam (Request body (JSON)) {String} name Name of the Event
    * @apiParam (Request body (JSON)) {[Object]} host Host User of the Event
    * @apiParam (Request body (JSON)) {String} location Location of the Event
-   * @apiParam (Request body (JSON)) {[Object]} game Game featured in the Event
+   * @apiParam (Request body (JSON)) {[Object]} game Game Geatured in the Event
    * @apiParam (Request body (JSON)) {Object} participants Participants in the Event
    * @apiParam (Request body (JSON)) {String} type Type of Event
    * @apiParam (Request body (JSON)) {Boolean} status Status of Event
@@ -98,14 +98,14 @@ module.exports = {
     });
   },
   /**
-   * @api {put} /api/events/edit/:name Edit an existing Event
+   * @api {put} /api/events/edit/:name Edit an Existing Event
    * @apiName EditEvent
    * @apiGroup Event
    *
    * @apiParam {String} name Event's name
    * @apiParam (Request body (JSON)) {[Object]} host Host User of the Event
    * @apiParam (Request body (JSON)) {String} location Location of the Event
-   * @apiParam (Request body (JSON)) {[Object]} game Game featured in the Event
+   * @apiParam (Request body (JSON)) {[Object]} game Game Featured in the Event
    * @apiParam (Request body (JSON)) {Object} participants Participants in the Event
    * @apiParam (Request body (JSON)) {String} type Type of Event
    * @apiParam (Request body (JSON)) {Boolean} status Status of Event
@@ -116,11 +116,11 @@ module.exports = {
     }).then(event => res.json(event));
   },
   /**
-   * @api {delete} /api/events/delete/:name Delete an existing Event
+   * @api {delete} /api/events/delete/:name Delete an Existing Event
    * @apiName DeleteEvent
    * @apiGroup Event
    *
-   * @apiParam {String} name Event's name
+   * @apiParam {String} name Event's Name
    */
   delete: (req, res) => {
     Event.findOneAndDelete({ name: req.params.name }).then(event =>

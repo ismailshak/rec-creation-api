@@ -1,7 +1,7 @@
 const express = require("express");
 const parser = require("body-parser");
 const cors = require("cors");
-const passport = require('passport')
+const passport = require("passport");
 
 const gamesRouter = require("./routes/game");
 const eventsRouter = require("./routes/event");
@@ -13,8 +13,10 @@ app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 app.use(cors());
 
-app.use(passport.initialize())
-require('./config/passport')(passport)
+app.use(passport.initialize());
+require("./config/passport")(passport);
+
+app.use("/", express.static("./apidoc"));
 
 app.use("/api/games", gamesRouter);
 app.use("/api/events", eventsRouter);

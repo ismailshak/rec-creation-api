@@ -4,7 +4,7 @@ const config = require("../config/config");
 
 module.exports = {
   /**
-   * @api {get} /api/users/ Request all Users
+   * @api {get} /api/users/ Request All Users
    * @apiName GetUsers
    * @apiGroup User
    */
@@ -18,11 +18,11 @@ module.exports = {
       });
   },
   /**
-   * @api {get} /api/users/id/:id Request User by id
+   * @api {get} /api/users/id/:id Request User By id
    * @apiName GetUserById
    * @apiGroup User
    *
-   * @apiParam {String} id User's id in the database
+   * @apiParam {String} id User's id in the Database
    */
   findById: (req, res) => {
     User.findById({ _id: req.params.id })
@@ -34,11 +34,11 @@ module.exports = {
       });
   },
   /**
-   * @api {get} /api/users/email/:email Request User by email
+   * @api {get} /api/users/email/:email Request User By Email
    * @apiName GetUserByEmail
    * @apiGroup User
    *
-   * @apiParam {String} email User's email in the database
+   * @apiParam {String} email User's Email in the Database
    */
   findByEmail: (req, res) => {
     User.findOne({ email: req.params.email })
@@ -50,7 +50,7 @@ module.exports = {
       });
   },
   /**
-   * @api {post} /api/users/ Create a new User
+   * @api {post} /api/users/ Create a New User
    * @apiName CreateUser
    * @apiGroup User
    *
@@ -58,8 +58,8 @@ module.exports = {
    * @apiParam (Request body JSON)) {String} lastName Last Name of the User
    * @apiParam (Request body JSON)) {String} email Email of the User
    * @apiParam (Request body JSON)) {String} password Password of the User
-   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
-   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is Attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is Hosting
    */
 
   create: (req, res) => {
@@ -68,7 +68,7 @@ module.exports = {
     });
   },
   /**
-   * @api {put} /api/users/edit/:id Edit an existing User
+   * @api {put} /api/users/edit/:id Edit an Existing User
    * @apiName EditUser
    * @apiGroup User
    *
@@ -77,8 +77,8 @@ module.exports = {
    * @apiParam (Request body JSON)) {String} lastName Last Name of the User
    * @apiParam (Request body JSON)) {String} email Email of the User
    * @apiParam (Request body JSON)) {String} password Password of the User
-   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
-   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is Attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is Hosting
    */
   update: (req, res) => {
     User.findByIdAndUpdate({ _id: req.params.id }, req.body, {
@@ -86,7 +86,7 @@ module.exports = {
     }).then(user => res.json(user));
   },
   /**
-   * @api {delete} /api/users/id/:id Delete and existing User
+   * @api {delete} /api/users/id/:id Delete an Existing User
    * @apiName DeleteUser
    * @apiGroup User
    *
@@ -104,8 +104,8 @@ module.exports = {
    * @apiParam (Request body JSON)) {String} lastName Last Name of the User
    * @apiParam (Request body JSON)) {String} email Email of the User
    * @apiParam (Request body JSON)) {String} password Password of the User
-   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
-   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is Attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is Hosting
    */
   signup: (req, res) => {
     if (req.body.email && req.body.password) {
@@ -144,8 +144,8 @@ module.exports = {
    * @apiParam (Request body JSON)) {String} lastName Last Name of the User
    * @apiParam (Request body JSON)) {String} email Email of the User
    * @apiParam (Request body JSON)) {String} password Password of the User
-   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
-   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is Attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is Hosting
    */
 
   login: (req, res) => {
