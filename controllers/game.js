@@ -10,6 +10,7 @@ module.exports = {
         console.log(err);
       });
   },
+
   findByName: (req, res) => {
     Game.findOne({ name: req.params.name })
       .then(game => {
@@ -19,6 +20,7 @@ module.exports = {
         console.log(err);
       });
   },
+
   findById: (req, res) => {
     Game.findOne({ _id: req.params.id })
       .then(game => {

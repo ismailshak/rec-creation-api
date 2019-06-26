@@ -1,16 +1,25 @@
 [
   {
-    "name": "Jordan Mittelman",
+    "name": {
+      "firstName": "Jordan",
+      "lastName": "Mittelman"
+    },
     "email": "jordan@rec-creation.com",
     "password": "signin"
   },
   {
-    "name": "Sean Urbassik",
+    "name": {
+      "firstName": "Sean",
+      "lastName": "Urbassik"
+    },
     "email": "sean@rec-creation.com",
     "password": "happyplace"
   },
   {
-    "name": "Ismail Elshakankiry",
+    "name": {
+      "firstName": "Ismail",
+      "lastName": "Elshakankiry"
+    },
     "email": "ismail@rec-creation.com",
     "password": "bigboss"
   }
