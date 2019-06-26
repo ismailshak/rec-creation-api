@@ -18,7 +18,7 @@ module.exports = {
   },
   /**
    * @api {get} /api/games/name/:name Request Game by Name
-   * @apiName GetByName
+   * @apiName GetGameByName
    * @apiGroup Game
    *
    * @apiParam {String} name Game's name
@@ -34,7 +34,7 @@ module.exports = {
   },
   /**
    * @api {get} /api/games/id/:id Reques Game by id
-   * @apiName GetById
+   * @apiName GetGameById
    * @apiGroup Game
    *
    * @apiParam {String} id Game's id in the database
@@ -71,7 +71,7 @@ module.exports = {
    * @apiName EditGame
    * @apiGroup Game
    *
-   * @apiParam (Request body (JSON)) {String} name Name of the Game
+   * @apiParam {String} name Name of the Game
    * @apiParam (Request body (JSON)) {String} supplies Supplies for the Game
    * @apiParam (Request body (JSON)) {Number} players Minimum number of players of the Game
    * @apiParam (Request body (JSON)) {String} rules Rules and instructions for the Game

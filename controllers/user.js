@@ -19,7 +19,7 @@ module.exports = {
   },
   /**
    * @api {get} /api/users/id/:id Request User by id
-   * @apiName GetById
+   * @apiName GetUserById
    * @apiGroup User
    *
    * @apiParam {String} id User's id in the database
@@ -35,7 +35,7 @@ module.exports = {
   },
   /**
    * @api {get} /api/users/email/:email Request User by email
-   * @apiName GetByEmail
+   * @apiName GetUserByEmail
    * @apiGroup User
    *
    * @apiParam {String} email User's email in the database
@@ -55,8 +55,11 @@ module.exports = {
    * @apiGroup User
    *
    * @apiParam (Request body JSON)) {String} firstName First Name of the User
-   *
-   *
+   * @apiParam (Request body JSON)) {String} lastName Last Name of the User
+   * @apiParam (Request body JSON)) {String} email Email of the User
+   * @apiParam (Request body JSON)) {String} password Password of the User
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
    */
 
   create: (req, res) => {
@@ -64,14 +67,46 @@ module.exports = {
       res.json(user);
     });
   },
+  /**
+   * @api {put} /api/users/edit/:id Edit an existing User
+   * @apiName EditUser
+   * @apiGroup User
+   *
+   * @apiParam {String} id User's id
+   * @apiParam (Request body JSON)) {String} firstName First Name of the User
+   * @apiParam (Request body JSON)) {String} lastName Last Name of the User
+   * @apiParam (Request body JSON)) {String} email Email of the User
+   * @apiParam (Request body JSON)) {String} password Password of the User
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
+   */
   update: (req, res) => {
     User.findByIdAndUpdate({ _id: req.params.id }, req.body, {
       new: true
     }).then(user => res.json(user));
   },
+  /**
+   * @api {delete} /api/users/id/:id Delete and existing User
+   * @apiName DeleteUser
+   * @apiGroup User
+   *
+   * @apiParam {String} id User's id
+   */
   delete: (req, res) => {
     User.findByIdAndDelete({ _id: req.params.id }).then(user => res.json(user));
   },
+  /**
+   * @api {post} /api/users/signup
+   * @apiName SignupUser
+   * @apiGroup User
+   *
+   * @apiParam (Request body JSON)) {String} firstName First Name of the User
+   * @apiParam (Request body JSON)) {String} lastName Last Name of the User
+   * @apiParam (Request body JSON)) {String} email Email of the User
+   * @apiParam (Request body JSON)) {String} password Password of the User
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
+   */
   signup: (req, res) => {
     if (req.body.email && req.body.password) {
       let newUser = req.body;
@@ -86,7 +121,7 @@ module.exports = {
               newUser.id = token;
               res.json({
                 token: token,
-                user
+                userID: user._id
               });
             } else {
               res.sendStatus(401);
@@ -100,6 +135,19 @@ module.exports = {
       res.sendStatus(401);
     }
   },
+  /**
+   * @api {post} api/users/login
+   * @apiName LoginUser
+   * @apiGroup User
+   *
+   * @apiParam (Request body JSON)) {String} firstName First Name of the User
+   * @apiParam (Request body JSON)) {String} lastName Last Name of the User
+   * @apiParam (Request body JSON)) {String} email Email of the User
+   * @apiParam (Request body JSON)) {String} password Password of the User
+   * @apiParam (Request body JSON)) {[Object]} attending Events User is attending
+   * @apiParam (Request body JSON)) {[Object]} hosting Events User is hosting
+   */
+
   login: (req, res) => {
     if (req.body.email && req.body.password) {
       User.findOne({ email: req.body.email }).then(user => {
