@@ -80,14 +80,14 @@ module.exports = {
       });
   },
   /**
-   * @api {post} /api/events/ Create new Event
+   * @api {post} /api/events/ Create New Event
    * @apiName CreateEvent
    * @apiGroup Event
    *
    * @apiParam (Request body (JSON)) {String} name Name of the Event
    * @apiParam (Request body (JSON)) {[Object]} host Host User of the Event
    * @apiParam (Request body (JSON)) {String} location Location of the Event
-   * @apiParam (Request body (JSON)) {[Object]} game Game Geatured in the Event
+   * @apiParam (Request body (JSON)) {[Object]} game Game Featured in the Event
    * @apiParam (Request body (JSON)) {Object} participants Participants in the Event
    * @apiParam (Request body (JSON)) {String} type Type of Event
    * @apiParam (Request body (JSON)) {Boolean} status Status of Event
@@ -102,7 +102,7 @@ module.exports = {
    * @apiName EditEvent
    * @apiGroup Event
    *
-   * @apiParam {String} name Event's name
+   * @apiParam {String} name Event's Name
    * @apiParam (Request body (JSON)) {[Object]} host Host User of the Event
    * @apiParam (Request body (JSON)) {String} location Location of the Event
    * @apiParam (Request body (JSON)) {[Object]} game Game Featured in the Event

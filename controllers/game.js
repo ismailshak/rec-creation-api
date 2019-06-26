@@ -56,9 +56,9 @@ module.exports = {
    * @apiDescription These are all optional fields to include in the request body. Only NAME is required
    * @apiParam (Request body (JSON)) {String} name Name of the Game
    * @apiParam (Request body (JSON)) {String} supplies Supplies for the Game
-   * @apiParam (Request body (JSON)) {Number} players Minimum number of players of the Game
-   * @apiParam (Request body (JSON)) {String} rules Rules and instructions for the Game
-   * @apiParam (Request body (JSON)) {String} image Image url to show the Game in action
+   * @apiParam (Request body (JSON)) {Number} players Minimum Number of Players of the Game
+   * @apiParam (Request body (JSON)) {String} rules Rules and Instructions for the Game
+   * @apiParam (Request body (JSON)) {String} image Image url to Show the Game in Action
    * @apiParam (Request body (JSON)) {[Object]} events Array of Event ids
    */
   create: (req, res) => {

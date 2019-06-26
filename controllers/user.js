@@ -96,7 +96,7 @@ module.exports = {
     User.findByIdAndDelete({ _id: req.params.id }).then(user => res.json(user));
   },
   /**
-   * @api {post} /api/users/signup
+   * @api {post} /api/users/signup User Signup
    * @apiName SignupUser
    * @apiGroup User
    *
@@ -136,7 +136,7 @@ module.exports = {
     }
   },
   /**
-   * @api {post} api/users/login
+   * @api {post} api/users/login User Login
    * @apiName LoginUser
    * @apiGroup User
    *
