@@ -15,7 +15,7 @@ router.post(
   eventsController.create
 );
 router.put(
-  "/edit/:name",
+  "/edit/:id",
   passport.authenticate("jwt", { session: false }),
   eventsController.update
 );
