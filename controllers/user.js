@@ -122,7 +122,8 @@ module.exports = {
               newUser.id = token;
               res.json({
                 token: token,
-                userID: user._id
+                userID: user._id,
+                name: user.firstName
               });
             } else {
               res.sendStatus(401);
@@ -160,7 +161,8 @@ module.exports = {
             var token = jwt.encode(payload, config.jwtSecret);
             res.json({
               token: token,
-              userID: user._id
+              userID: user._id,
+              name: user.firstName
             });
           } else {
             res.sendStatus(401);
