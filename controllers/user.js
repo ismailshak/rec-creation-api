@@ -25,7 +25,7 @@ module.exports = {
    * @apiParam {String} id User's id in the Database
    */
   findById: (req, res) => {
-    User.findById({ _id: req.params.id })
+    User.findById(req.params.id)
       .populate("attending", "hosting")
       .then(user => {
         res.json(user);

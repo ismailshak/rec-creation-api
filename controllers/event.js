@@ -40,7 +40,7 @@ module.exports = {
    * @apiParam {String} id Event's id
    */
   findById: (req, res) => {
-    Event.findById({ _id: req.params.id })
+    Event.findById(req.params.id)
       .populate()
       .then(event => {
         res.json(event);
