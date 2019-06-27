@@ -40,7 +40,7 @@ module.exports = {
    * @apiParam {String} id Event's id
    */
   findById: (req, res) => {
-    Event.findbyId({ _id: req.params.id })
+    Event.findById({ _id: req.params.id })
       .populate("host", "game")
       .then(event => {
         res.json(event);
