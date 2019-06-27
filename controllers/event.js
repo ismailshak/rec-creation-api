@@ -110,11 +110,12 @@ module.exports = {
     });
   },
   /**
-   * @api {put} /api/events/edit/:name Edit an Existing Event
+   * @api {put} /api/events/edit/:id Edit an Existing Event
    * @apiName EditEvent
    * @apiGroup Event
    *
-   * @apiParam {String} name Event's Name
+   * @apiParam {String} id Event's id
+   * @apiParam (Request body (JSON)) {String} name Name of the Event
    * @apiParam (Request body (JSON)) {[Object]} host Host User of the Event
    * @apiParam (Request body (JSON)) {String} location Location of the Event
    * @apiParam (Request body (JSON)) {[Object]} game Game Featured in the Event
@@ -123,7 +124,7 @@ module.exports = {
    * @apiParam (Request body (JSON)) {Boolean} status Status of Event
    */
   update: (req, res) => {
-    Event.findOneAndUpdate({ name: req.params.name }, req.body, {
+    Event.findByIdAndUpdate(req.params.id, req.body, {
       new: true
     }).then(event => res.json(event));
   },
