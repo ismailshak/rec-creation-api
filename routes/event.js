@@ -20,7 +20,7 @@ router.put(
   eventsController.update
 );
 router.delete(
-  "/delete/:name",
+  "/delete/:id",
   passport.authenticate("jwt", { session: false }),
   eventsController.delete
 );

@@ -135,8 +135,6 @@ module.exports = {
    * @apiParam {String} name Event's Name
    */
   delete: (req, res) => {
-    Event.findOneAndDelete({ name: req.params.name }).then(event =>
-      res.json(event)
-    );
+    Event.findByIdAndDelete(req.params.id).then(event => res.json(event));
   }
 };
