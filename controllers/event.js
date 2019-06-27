@@ -128,11 +128,11 @@ module.exports = {
     }).then(event => res.json(event));
   },
   /**
-   * @api {delete} /api/events/delete/:name Delete an Existing Event
+   * @api {delete} /api/events/delete/:id Delete an Existing Event
    * @apiName DeleteEvent
    * @apiGroup Event
    *
-   * @apiParam {String} name Event's Name
+   * @apiParam {String} id Event's id
    */
   delete: (req, res) => {
     Event.findByIdAndDelete(req.params.id).then(event => res.json(event));
