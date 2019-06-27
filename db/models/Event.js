@@ -13,12 +13,16 @@ const Event = new Schema({
     type: Schema.Types.ObjectId,
     ref: "Game"
   },
-  participants: {
-    name: String,
-    email: String
-  },
+  attendees: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    }
+  ],
+  participants: Number,
   type: String,
-  status: Boolean
+  status: Boolean,
+  description: String
 });
 
 module.exports = mongoose.model("Event", Event);

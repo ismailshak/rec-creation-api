@@ -61,5 +61,40 @@
     "players": 6,
     "rules": "All players should sit in a circle with one standing with his/her eyes closed. The players sitting in the circle pass a ball to each other. No player can hold the ball for more than a second. At any point the standing player can yell 'Hot Potato!' and whoever is holding the ball at that time is out.",
     "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/151215_Playworks_898x599.jpg"
+  },
+  {
+    "name": "Scavenger Hunt",
+    "supplies": "5 or More Random Items/Locations, List of Clues,  Map",
+    "players": 6,
+    "rules": "Break into at least 3 teams of two. Use the clues and the map to find each item. Set a time that each team must complete the hunt in. Once teams complete each clue and find all items they race to the finish line before time runs out. First team to cross with all or most items in the allowed time wins!",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/Scavenger_Hunt.jpg"
+  },
+  {
+    "name": "Sack Race",
+    "supplies": "An Open Space, A Burlap Sack for Each Participant",
+    "players": 4,
+    "rules": "Mark a start and finish line. Have all racers stand in their sacks and once the judge says go, all racers hop to the finish line. First one to cross the finish line wins.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/sack-race.jpg"
+  },
+  {
+    "name": "Human Tic Tac Toe",
+    "supplies": "Chalk or Lawn Safe Spray Paint, 10 Shirts With 5 of One Color and 5 of Another Color",
+    "players": 10,
+    "rules": "Make a giant Tic Tac Toe board. Divide players into two teams and decide which goes first. The first team then places its first 'marker' (i.e. one of its players) in the square of its choice. Then, the second team places one of its markers in their chosen spot on the board. The team takes turns until one team gets 3 markers in a row or the round ends in a tie. Play several rounds of the game, keeping track of how many times each team won and then award a prize to the group that racks up the most wins.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/Tic-Tac-Toe-Product.jpg"
+  },
+  {
+    "name": "Ring Toss",
+    "supplies": "24 Glass Soda Bottles, A Low Table, 4 Plastic Rings",
+    "players": 4,
+    "rules": "Place the soda bottles on the table, packed close together. Have the players stand at a designated spot at least 4 feet away from the table. One at a time, have players take turns trying to throw the four rings so that they land around the necks of the bottles. If a player lands a ring on the neck of a bottle, they earn points or a prize.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/bottle-ring-toss-carnival-game-174496466-59216faf3df78cf5fafe9edd.jpg"
+  },
+  {
+    "name": "Who Am I?",
+    "supplies": "Labels Featuring Names of Celebrities, Characters, Historical Figures, or Political Personalities",
+    "players": 6,
+    "rules": "Stick one label on each person's back. Do not allow him or her to see the name. Each person gets 20 'yes or no' questions to find out who he or she is. The players have to roam around the room asking other players questions to determine who they are. Whoever guesses correctly first wins the game.",
+    "image": "http://wayfindmedia.com/wp-content/uploads/2019/06/whoami.jpg"
   }
 ]
