@@ -1,4 +1,5 @@
 const Event = require("../db/models/Event");
+const Game = require("../db/models/Game");
 
 module.exports = {
   /**
@@ -40,6 +41,7 @@ module.exports = {
    */
   findById: (req, res) => {
     Event.findbyId({ _id: req.params.id })
+      .populate("host", "game")
       .then(event => {
         res.json(event);
       })
@@ -94,7 +96,11 @@ module.exports = {
    */
   create: (req, res) => {
     Event.create(req.body).then(event => {
-      res.json(event);
+      Game.findOne({ name: event.game }).then(game => {
+        game.events.push(event._id);
+        game.save();
+        res.json(event);
+      });
     });
   },
   /**

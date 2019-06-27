@@ -26,6 +26,7 @@ module.exports = {
    */
   findById: (req, res) => {
     User.findById({ _id: req.params.id })
+      .populate("attending", "hosting")
       .then(user => {
         res.json(user);
       })

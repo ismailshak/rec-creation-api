@@ -11,12 +11,10 @@ const Event = new Schema({
     }
   ],
   location: String,
-  game: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "Game"
-    }
-  ],
+  game: {
+    type: Schema.Types.ObjectId,
+    ref: "Game"
+  },
   participants: {
     name: String,
     email: String

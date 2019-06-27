@@ -41,6 +41,7 @@ module.exports = {
    */
   findById: (req, res) => {
     Game.findOne({ _id: req.params.id })
+      .populate("events")
       .then(game => {
         res.json(game);
       })
