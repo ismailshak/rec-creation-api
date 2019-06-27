@@ -4,12 +4,10 @@ const Schema = mongoose.Schema;
 
 const Event = new Schema({
   name: String,
-  host: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "User"
-    }
-  ],
+  host: {
+    type: Schema.Types.ObjectId,
+    ref: "User"
+  },
   location: String,
   game: {
     type: Schema.Types.ObjectId,
