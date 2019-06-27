@@ -41,7 +41,8 @@ module.exports = {
    */
   findById: (req, res) => {
     Event.findById(req.params.id)
-      .populate()
+      .populate("game")
+      .populate("host")
       .then(event => {
         res.json(event);
       })
