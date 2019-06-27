@@ -26,4 +26,4 @@ User.deleteMany({})
     console.log(err);
   });
 
-Event.deleteMany({});
+Event.deleteMany({}).then(_ => console.log("Wiped events"));
