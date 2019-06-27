@@ -1,5 +1,6 @@
 const Event = require("../db/models/Event");
 const Game = require("../db/models/Game");
+const User = require("../db/models/User");
 
 module.exports = {
   /**
@@ -98,11 +99,14 @@ module.exports = {
   create: (req, res) => {
     Event.create(req.body).then(event => {
       res.json(event);
-      // Game.findOne({ name: event.game }).then(game => {
-      //   game.events.push(event._id);
-      //   game.save();
-      //
-      // });
+      Game.findById(event.game).then(game => {
+        game.events.push(event._id);
+        game.save();
+      });
+      User.findById(event.host).then(user => {
+        user.hosting.push(event._id);
+        user.save();
+      });
     });
   },
   /**

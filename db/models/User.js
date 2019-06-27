@@ -13,10 +13,12 @@ const User = new Schema({
       ref: "Event"
     }
   ],
-  hosting: {
-    type: Schema.Types.ObjectId,
-    ref: "Event"
-  }
+  hosting: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Event"
+    }
+  ]
 });
 
 module.exports = mongoose.model("User", User);
