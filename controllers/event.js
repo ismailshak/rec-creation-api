@@ -141,6 +141,7 @@ module.exports = {
   addAttendee: (req, res) => {
     User.findById(req.params.userID).then(user => {
       Event.findByIdAndUpdate(req.params.eventID,{ $push: { attendees: user._id } }, {new: true})
+      .populate("attendees")
       .then(event => res.json(event))
     })
   }
