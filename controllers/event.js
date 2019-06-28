@@ -127,7 +127,10 @@ module.exports = {
   update: (req, res) => {
     Event.findByIdAndUpdate(req.params.id, req.body, {
       new: true
-    }).then(event => res.json(event));
+    }).populate("attendees")
+    .populate("host")
+    .populate("game")
+    .then(event => res.json(event));
   },
   /**
    * @api {delete} /api/events/delete/:id Delete an Existing Event
@@ -143,6 +146,8 @@ module.exports = {
     User.findById(req.params.userID).then(user => {
       Event.findByIdAndUpdate(req.params.eventID,{ $push: { attendees: user._id } }, {new: true})
       .populate("attendees")
+      .populate("host")
+      .populate("game")
       .then(event => res.json(event))
     })
   }
