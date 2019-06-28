@@ -150,7 +150,7 @@ module.exports = {
       .populate("game")
       .then(event => {
         User.findByIdAndUpdate(user._id, {$push: {attending: event._id}}, {new: true})
-        .then(event => res.json(event))
+        .then(_ => res.json(event))
       })
     })
   }
