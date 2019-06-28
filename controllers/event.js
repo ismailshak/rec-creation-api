@@ -137,5 +137,11 @@ module.exports = {
    */
   delete: (req, res) => {
     Event.findByIdAndDelete(req.params.id).then(event => res.json(event));
+  },
+  addAttendee: (req, res) => {
+    User.findById(req.params.userID).then(user => {
+      Event.findByIdAndUpdate(req.params.eventID,{ $push: { attendees: user._id } }, {new: true})
+      .then(event => res.json(event))
+    })
   }
 };

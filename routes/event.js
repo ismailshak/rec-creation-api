@@ -19,6 +19,11 @@ router.put(
   passport.authenticate("jwt", { session: false }),
   eventsController.update
 );
+router.put(
+  "/addAttendee/:userID/:eventID",
+  passport.authenticate("jwt", { session: false }),
+  eventsController.addAttendee
+);
 router.delete(
   "/delete/:id",
   passport.authenticate("jwt", { session: false }),
